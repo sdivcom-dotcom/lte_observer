@@ -1,0 +1,59 @@
+
+      Bundle[{LteRsrp=-102, LteRsrq=-11, LteRssnr=64,  LteSignalStrength=20}]
+
+['   reason: connected', '  failover: false', ' extra: internet.beeline.ru', ' isAvailable: true']
+None
+                                                                                                                                                              [ 0s529 | ноя 01 02:04 ]
+
+      Bundle[{LteRsrp=-95, LteRsrq=-12, LteRssnr=112,  LteSignalStrength=25}]
+
+['   reason: connected', '  failover: false', ' extra: internet', ' isAvailable: true']
+None
+                                                                                                                                                              [ 0s565 | ноя 01 02:04 ]
+
+      Bundle[{LteRsrp=-96, LteRsrq=-11, LteRssnr=64,  LteSignalStrength=21}]
+
+['   reason: connected', '  failover: false', ' extra: internet.tele2.ru', ' isAvailable: true']
+None
+                                                                                                                                                              [ 0s982 | ноя 01 02:04 ]
+
+      Bundle[{LteRsrp=-84, LteRsrq=-14, LteRssnr=-12,  LteSignalStrength=31}]
+
+['   reason: connected', '  failover: false', ' extra: internet.mts.ru', ' isAvailable: true']
+None
+
+
+LteRsrp=-84, LteRsrq=-14, LteRssnr=-12, LteCqi=2147483647, CdmaDbm=-120, CdmaEcio=-160, GsmSignalStrength=99, isGsm=true, TdScdma=2147483647, EvdoDbm=-120, EvdoSnr=-1, EvdoEcio=-1, GsmBitErrorRate=0, LteSignalStrength=31
+
+
+#scan_lte()
+
+#read_info_lte()
+
+#Rsrp - Received Signal Code Power
+#Отлично -60 дБм... 0 дБм
+#Хорошо -75 дБм... -60 дБм
+#Удовлетворительно -85 дБм... -75 дБм
+#Плохо -95 дБм... -85 дБм
+#Очень плохо -124 дБм... -95 дБм
+
+#Rsrq - Reference Signal Received Quality
+# Отлично ≥ -10 дБ
+# Хорошо -10 дБ... -15 дБ
+# Удовлетворительно -15 дБ... -20 дБ
+# Плохо ≤ -20 дБ
+
+#Rssnr аналогичен SINR (Signal Interference + Noise Ratio)
+# Отлично ≥ 20 дБ
+# Хорошо 13 дБ... 20 дБ
+# Удовлетворительно 0 дБ... 13 дБ
+# Плохо ≤ 0 дБ
+
+#SignalStrength
+# > -65 dBm	Excellent
+# -65 dBm to -75 dBm	Good
+# -75 dBm to -85 dBm	Fair
+# -85 dBm to -95 dBm	Poor
+# <= -95 dBm	No signal
+#LteRsrp=-96, LteRsrq=-11, LteRssnr=64,  LteSignalStrength=21
+#data = {"data": "23.26.52", "Rsrp": -96, "Rsrq": -11, "Rssnr": 64, "SignalStrength": 21}
