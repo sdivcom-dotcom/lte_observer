@@ -26,7 +26,7 @@ def add_data_to_json(filename, Rsrp, Rsrq, Rssnr, SignalStrength, reason, failov
     }
 
     existing_data.append(new_data)
-    with open(filename, 'a+') as file:
+    with open(filename, 'w') as file:
         json.dump(existing_data, file, indent=4)
 
 
