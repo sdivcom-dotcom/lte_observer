@@ -9,5 +9,5 @@ def delete_trash(input_string):
 def delete_simbol(input_string):
     input_string = input_string.decode('utf-8')
     input_string = input_string.replace(" ", "")
-    output_string = input_string.replace("\n", "")
-    return output_string
+    input_string = input_string.replace("\n", "")
+    return input_string

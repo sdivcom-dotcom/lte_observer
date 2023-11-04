@@ -6,6 +6,7 @@ from read_modems import find_devices, find_count_devices, read_info_connect, fin
 
 
 def add_data_to_json(filename, Rsrp, Rsrq, Rssnr, SignalStrength, reason, failover, extra, isavailable, date=None):
+    filename = filename + ".json"
     if date is None:
         date = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     try:
@@ -15,6 +16,7 @@ def add_data_to_json(filename, Rsrp, Rsrq, Rssnr, SignalStrength, reason, failov
         existing_data = []
 
     new_data = {
+        "data": date,
         "Rsrp": Rsrp,
         "Rsrq": Rsrq,
         "Rssnr": Rssnr,
@@ -27,7 +29,7 @@ def add_data_to_json(filename, Rsrp, Rsrq, Rssnr, SignalStrength, reason, failov
 
     existing_data.append(new_data)
     with open(filename, 'w') as file:
-        json.dump(existing_data, file, indent=4)
+        json.dump(existing_data, file, indent=4)    
 
 
 def sum_command(filename, device):
@@ -61,36 +63,42 @@ def reboot_modem(device):
 def main(minute_cycle, sleep_time):
     i = 0
     r = 24 * 60 // minute_cycle
-    ii = 0
-    rr = 4
     while i < r:
         dev_count = find_count_devices()
         if dev_count == "4":
             device_mass = find_devices()
+            ii = 0
+            rr = 4
             while ii < rr:
                 ii = str(ii)
                 filename = "modem_name" + ii
-                sum_command(filename, device_mass[ii])
                 ii = int(ii)
+                sum_command(filename, device_mass[ii])
                 ii = ii + 1
         else:
             print("Недостаточно модемов подключено к сети")
             print("Запускаю диагностику")
             diag_devices()
         time.sleep(sleep_time)
+        ii = 0
+        rr = 4
         while ii < rr:
             device_mass = find_devices()
             reboot_modem(device_mass[ii])
             ii = ii + 1
+        time.sleep(sleep_time)
         dev_count = find_count_devices()
         if dev_count == "4":
             device_mass = find_devices()
+            ii = 0
+            rr = 4
             while ii < rr:
                 ii = str(ii)
                 filename = "modem_name" + ii
-                sum_command(filename, device_mass[ii])
                 ii = int(ii)
+                sum_command(filename, device_mass[ii])
                 ii = ii + 1
         time.sleep(sleep_time)
+        i = i + 1
 
-main(1, 120)
+main(2, 300)

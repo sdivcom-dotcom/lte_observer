@@ -96,6 +96,7 @@ def diag_devices():
     apn_tele2 = 0
     apn_mega = 0
     count = find_count_devices()
+    print(count)
     if count == "3":
         print("Прочитаем какие модемы работают")
         device_mass = find_num_devices(count)
@@ -194,6 +195,7 @@ def diag_devices():
             print("Модем с Мегафон лишь доступен")
         else:
             pass
-    
+    elif count == "4":
+        print("Всё хорошо. По ошибке запушена диагностика!")
     else:
         print("Недоступен никакой из модемов, проверьте хаб!")
