@@ -112,6 +112,7 @@ def read_info_lte(device):
     read_lte_devce = read_lte_devce.replace("LteRsrq=", "")
     read_lte_devce = read_lte_devce.replace("LteRssnr=", "")
     read_lte_devce = read_lte_devce.replace("LteSignalStrength=", "")
+    read_lte_devce = read_lte_devce.replace("\r", "")
     lines = read_lte_devce.split(',')
     lines = [line for line in lines if line]
     lines.sort() 

@@ -1,43 +1,100 @@
+import os
 import json
 import pandas as pd
 import matplotlib.pyplot as plt
+
 
 def load_data_from_json(filename):
     with open(filename, 'r') as file:
         data = json.load(file)
     return data
 
-def plot_data(data):
+
+def plot_data(data, prefix):
     df = pd.DataFrame(data)
-    
-    # Преобразовываем столбец 'data' в формат даты и времени
     df['data'] = pd.to_datetime(df['data'])
-    
-    # Строим графики
-    fig, axes = plt.subplots(2, 2, figsize=(12, 8))
-    
-    # График для Rsrp
-    axes[0, 0].plot(df['data'], df['Rsrp'])
-    axes[0, 0].set_title('Rsrp vs. Data')
-    
-    # График для Rsrq
-    axes[0, 1].plot(df['data'], df['Rsrq'])
-    axes[0, 1].set_title('Rsrq vs. Data')
-    
-    # График для Rssnr
-    axes[1, 0].plot(df['data'], df['Rssnr'])
-    axes[1, 0].set_title('Rssnr vs. Data')
-    
-    # График для SignalStrength
-    axes[1, 1].plot(df['data'], df['SignalStrength'])
-    axes[1, 1].set_title('SignalStrength vs. Data')
-    
-    plt.tight_layout()
-    plt.show()
+    plt.figure(figsize=(12, 8))
+    plt.plot(df['data'], df['Rsrp'])
+    plt.title('Rsrp vs. Data')
+    plt.xlabel('Date and Time')
+    plt.ylabel('Rsrp')
+    name = prefix + '_rsrp_plot.png'
+    plt.savefig(name)
+    plt.clf()
+    plt.plot(df['data'], df['Rsrq'])
+    plt.title('Rsrq vs. Data')
+    plt.xlabel('Date and Time')
+    plt.ylabel('Rsrq')
+    plt.savefig('rsrq_plot.png')
+    name = prefix + '_rsrq_plot.png'
+    plt.savefig(name)
+    plt.clf()
+    plt.plot(df['data'], df['Rssnr'])
+    plt.title('Rssnr vs. Data')
+    plt.xlabel('Date and Time')
+    plt.ylabel('Rssnr')
+    name = prefix + '_rssnr_plot.png'
+    plt.savefig(name)
+    plt.clf()
+    plt.plot(df['data'], df['SignalStrength'])
+    plt.title('SignalStrength vs. Data')
+    plt.xlabel('Date and Time')
+    plt.ylabel('SignalStrength')
+    name = prefix + '_signal_strength_plot.png'
+    plt.savefig(name)
+    plt.clf()
 
-# Загружаем данные из файла JSON
-filename = 'data.json'
-data = load_data_from_json(filename)
 
-# Строим графики
-plot_data(data)
+def opred_apn(filename):
+    with open(filename, 'r') as file:
+        file_content = file.read()
+    if 'internet.mts.ru' in file_content:
+        result = "mts"
+    elif 'internet.beeline.ru' in file_content:
+        result = "beeline"
+    elif 'internet' in file_content:
+        result = "megafon"
+    elif 'internet.tele2.ru' in file_content:
+        result = "tele2"
+    else:
+        result = "***"
+        print("Файл поврежден!")
+    return result
+
+
+def corrector(filename):
+    with open(filename, 'r') as file:
+        file_content = file.read()
+    if not file_content.endswith(']'):
+        with open(filename, 'a') as file:
+            file.write(']')
+    else:
+        pass
+
+
+def move_file(filename, prefix):
+    pref = prefix + "_" + filename
+    command = "mv " + filename + " " + pref
+    os.system(command)
+
+
+def obrab(filename):
+    prefix = opred_apn(filename)
+    corrector(filename)
+    data = load_data_from_json(filename)
+    plot_data(data, prefix)
+    move_file(filename, prefix)
+    
+
+def main():
+    filename = 'modem_name1.json'
+    obrab(filename)
+    filename = 'modem_name2.json'
+    obrab(filename)
+    filename = 'modem_name3.json'
+    obrab(filename)
+    filename = 'modem_name4.json'
+    obrab(filename)
+
+
+main()

@@ -5,8 +5,20 @@ from diag_modems import diag_devices
 from read_modems import find_devices, find_count_devices, read_info_connect, find_connected_device, read_info_lte, radio_switch
 
 
+def what_day():
+    now = datetime.now()
+    time_mass = [now.day,now.month,now.year]
+    time_mass = str(time_mass)
+    time_mass = time_mass.replace("[", "")
+    time_mass = time_mass.replace("]", "")
+    time_mass = time_mass.replace(" ", "")
+    time_mass = time_mass.replace(",", "_")
+    return time_mass
+
+
 def add_data_to_json(filename, Rsrp, Rsrq, Rssnr, SignalStrength, reason, failover, extra, isavailable, date=None):
-    filename = filename + ".json"
+    times = what_day()
+    filename = times + filename + ".json"
     if date is None:
         date = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     try:
@@ -40,13 +52,13 @@ def sum_command(filename, device):
         failover = connect_dev[1]
         extra = connect_dev[2]
         isAvailable = connect_dev[3]
-        print(connect_dev)
+        #print(connect_dev)
         dev_lte = read_info_lte(device)
         Rsrp = dev_lte[0]
         Rsrq = dev_lte[1]
         Rssnr = dev_lte[2]
         SignalStrength = dev_lte[3]
-        print(dev_lte)
+        #print(dev_lte)
         add_data_to_json(filename, Rsrp, Rsrq, Rssnr, SignalStrength, reason, failover, extra, isAvailable, date=None)
     else:
         pass
@@ -62,7 +74,7 @@ def reboot_modem(device):
 
 def main(minute_cycle, sleep_time):
     i = 0
-    r = 24 * 60 // minute_cycle
+    r = 3
     while i < r:
         dev_count = find_count_devices()
         if dev_count == "4":
@@ -87,18 +99,6 @@ def main(minute_cycle, sleep_time):
             reboot_modem(device_mass[ii])
             ii = ii + 1
         time.sleep(sleep_time)
-        dev_count = find_count_devices()
-        if dev_count == "4":
-            device_mass = find_devices()
-            ii = 0
-            rr = 4
-            while ii < rr:
-                ii = str(ii)
-                filename = "modem_name" + ii
-                ii = int(ii)
-                sum_command(filename, device_mass[ii])
-                ii = ii + 1
-        time.sleep(sleep_time)
         i = i + 1
 
-main(2, 300)
+main(5, 180)
