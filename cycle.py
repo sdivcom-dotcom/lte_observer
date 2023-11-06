@@ -75,8 +75,9 @@ def reboot_modem(device):
 def main(minute_cycle, sleep_time):
     print("Start Cycle")
     i = 0
-    r = 3
+    r = 50
     while i < r:
+        print("Считываем показания")
         dev_count = find_count_devices()
         if dev_count == "4":
             device_mass = find_devices()
@@ -92,9 +93,11 @@ def main(minute_cycle, sleep_time):
             print("Недостаточно модемов подключено к сети")
             print("Запускаю диагностику")
             diag_devices()
+        print("Пауза")
         time.sleep(sleep_time)
         ii = 0
         rr = 4
+        print("Перезагружаем модемы")
         while ii < rr:
             device_mass = find_devices()
             reboot_modem(device_mass[ii])
@@ -103,4 +106,4 @@ def main(minute_cycle, sleep_time):
         i = i + 1
         print("Cycle =",i)
 
-main(1, 120)
+main(1, 300)

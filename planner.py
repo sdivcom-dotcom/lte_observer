@@ -3,8 +3,8 @@ import subprocess
 import time
 from datetime import datetime
 
-start_hour = 3
-start_minute = 10
+start_hour = 16
+start_minute = 8
 
 def what_day_str():
     now = datetime.now()
@@ -60,13 +60,13 @@ def prover_files():
 
 
 def new_dir(day_str):
-    command_dir = "mkir results_"
+    command_dir = "mkdir results_"
     command = command_dir + day_str
     os.system(command)
 
 
 def cp_rm_results(day_str):
-    command_cp = "cp *.json && cp *.png results_" + day_str
+    command_cp = "cp *.json results_" + day_str + "&& cp *.png results_" + day_str
     os.system(command_cp)
     command_rm = "rm *.json && rm *.png"
     os.system(command_rm)

@@ -2,7 +2,7 @@ import os
 import subprocess
 from read_modems import read_info_connect, find_count_devices
 from decor import delete_trash
-
+from datetime import datetime
 command_list_devices = "adb devices -l | grep usb"
 
 def replase_string(input_string):

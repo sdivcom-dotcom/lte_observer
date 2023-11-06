@@ -1,6 +1,7 @@
 import os
 import json
 import pandas as pd
+from datetime import datetime
 import matplotlib.pyplot as plt
 
 
@@ -8,6 +9,17 @@ def load_data_from_json(filename):
     with open(filename, 'r') as file:
         data = json.load(file)
     return data
+
+
+def what_day():
+    now = datetime.now()
+    time_mass = [now.day,now.month,now.year]
+    time_mass = str(time_mass)
+    time_mass = time_mass.replace("[", "")
+    time_mass = time_mass.replace("]", "")
+    time_mass = time_mass.replace(" ", "")
+    time_mass = time_mass.replace(",", "_")
+    return time_mass
 
 
 def plot_data(data, prefix):
@@ -52,13 +64,10 @@ def opred_apn(filename):
         result = "mts"
     elif 'internet.beeline.ru' in file_content:
         result = "beeline"
-    elif 'internet' in file_content:
-        result = "megafon"
     elif 'internet.tele2.ru' in file_content:
         result = "tele2"
     else:
-        result = "***"
-        print("Файл поврежден!")
+        result = "megafon"
     return result
 
 
@@ -87,13 +96,13 @@ def obrab(filename):
     
 
 def main():
-    filename = 'modem_name0.json'
+    filename = what_day() + 'modem_name0.json'
     obrab(filename)
-    filename = 'modem_name1.json'
+    filename = what_day() +  'modem_name1.json'
     obrab(filename)
-    filename = 'modem_name2.json'
+    filename = what_day() +  'modem_name2.json'
     obrab(filename)
-    filename = 'modem_name3.json'
+    filename = what_day() +  'modem_name3.json'
     obrab(filename)
 
 
