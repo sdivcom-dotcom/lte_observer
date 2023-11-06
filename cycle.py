@@ -73,6 +73,7 @@ def reboot_modem(device):
 
 
 def main(minute_cycle, sleep_time):
+    print("Start Cycle")
     i = 0
     r = 3
     while i < r:
@@ -100,5 +101,6 @@ def main(minute_cycle, sleep_time):
             ii = ii + 1
         time.sleep(sleep_time)
         i = i + 1
+        print("Cycle =",i)
 
-main(5, 180)
+main(1, 120)

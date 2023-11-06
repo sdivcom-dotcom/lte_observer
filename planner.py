@@ -3,8 +3,8 @@ import subprocess
 import time
 from datetime import datetime
 
-start_hour = 2
-start_minute = 30
+start_hour = 3
+start_minute = 10
 
 def what_day_str():
     now = datetime.now()
@@ -56,7 +56,7 @@ def prover_files():
         response = 1
     else:
         response = 0
-    return respose
+    return response
 
 
 def new_dir(day_str):
@@ -72,24 +72,20 @@ def cp_rm_results(day_str):
     os.system(command_rm)
 
 
-try:
-    while True:
-        time_mass = what_time_day()
-        if time_mass[0] == start_hour and time_mass[1] == start_minute:
-            print("Запуск программы для сборки результатов. Время старта=",time_mass)
-            time.sleep(10)
-            start_programm("cycle.py")
-            val = prover_files()
-            if val == 1:
-                day_str = what_day_str()
-                start_programm("plot.py")
-                print("Запуск генерации графиков")
-                new_dir(day_str)
-                cp_rm_results(day_str)
-            else:
-                print("Не были созданы все файлы")
-                break
-        else:
-            time.sleep(10)
-except KeyboardInterrupt:
-    print("Выход из цикла по нажатию Ctrl+C")
+
+time_mass = what_time_day()
+if time_mass[0] == start_hour and time_mass[1] == start_minute:
+    print("Запуск программы для сборки результатов. Время старта=",time_mass)
+    time.sleep(10)
+    start_programm("cycle.py")
+    val = prover_files()
+    if val == 1:
+        day_str = what_day_str()
+        start_programm("plot.py")
+        print("Запуск генерации графиков")
+        new_dir(day_str)
+        cp_rm_results(day_str)
+    else:
+        print("Не были созданы все файлы")
+else:
+    time.sleep(10)

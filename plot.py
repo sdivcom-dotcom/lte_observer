@@ -87,13 +87,13 @@ def obrab(filename):
     
 
 def main():
+    filename = 'modem_name0.json'
+    obrab(filename)
     filename = 'modem_name1.json'
     obrab(filename)
     filename = 'modem_name2.json'
     obrab(filename)
     filename = 'modem_name3.json'
-    obrab(filename)
-    filename = 'modem_name4.json'
     obrab(filename)
 
 
