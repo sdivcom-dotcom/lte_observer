@@ -1,0 +1,222 @@
+[
+    {
+        "data": "2023-11-08 01:46:24",
+        "Rsrp": "-9",
+        "Rsrq": "-96",
+        "Rssnr": "108",
+        "SignalStrength": "23",
+        "reason": "connected",
+        "failover": "false",
+        "extra": "internet",
+        "isAvailable": "true"
+    },
+    {
+        "data": "2023-11-08 01:57:17",
+        "Rsrp": "-9",
+        "Rsrq": "-96",
+        "Rssnr": "104",
+        "SignalStrength": "22",
+        "reason": "connected",
+        "failover": "false",
+        "extra": "internet",
+        "isAvailable": "true"
+    },
+    {
+        "data": "2023-11-08 02:08:09",
+        "Rsrp": "-9",
+        "Rsrq": "-96",
+        "Rssnr": "104",
+        "SignalStrength": "22",
+        "reason": "connected",
+        "failover": "false",
+        "extra": "internet",
+        "isAvailable": "true"
+    },
+    {
+        "data": "2023-11-08 02:19:02",
+        "Rsrp": "-8",
+        "Rsrq": "-95",
+        "Rssnr": "124",
+        "SignalStrength": "23",
+        "reason": "connected",
+        "failover": "false",
+        "extra": "internet",
+        "isAvailable": "true"
+    },
+    {
+        "data": "2023-11-08 02:29:54",
+        "Rsrp": "-8",
+        "Rsrq": "-95",
+        "Rssnr": "124",
+        "SignalStrength": "23",
+        "reason": "connected",
+        "failover": "false",
+        "extra": "internet",
+        "isAvailable": "true"
+    },
+    {
+        "data": "2023-11-08 02:40:46",
+        "Rsrp": "-8",
+        "Rsrq": "-95",
+        "Rssnr": "116",
+        "SignalStrength": "23",
+        "reason": "connected",
+        "failover": "false",
+        "extra": "internet",
+        "isAvailable": "true"
+    },
+    {
+        "data": "2023-11-08 02:51:38",
+        "Rsrp": "-8",
+        "Rsrq": "-95",
+        "Rssnr": "130",
+        "SignalStrength": "23",
+        "reason": "connected",
+        "failover": "false",
+        "extra": "internet",
+        "isAvailable": "true"
+    },
+    {
+        "data": "2023-11-08 03:02:31",
+        "Rsrp": "-9",
+        "Rsrq": "-97",
+        "Rssnr": "23",
+        "SignalStrength": "84",
+        "reason": "connected",
+        "failover": "false",
+        "extra": "internet",
+        "isAvailable": "true"
+    },
+    {
+        "data": "2023-11-08 03:13:23",
+        "Rsrp": "-8",
+        "Rsrq": "-95",
+        "Rssnr": "120",
+        "SignalStrength": "23",
+        "reason": "connected",
+        "failover": "false",
+        "extra": "internet",
+        "isAvailable": "true"
+    },
+    {
+        "data": "2023-11-08 03:24:16",
+        "Rsrp": "-10",
+        "Rsrq": "-96",
+        "Rssnr": "23",
+        "SignalStrength": "88",
+        "reason": "connected",
+        "failover": "false",
+        "extra": "internet",
+        "isAvailable": "true"
+    },
+    {
+        "data": "2023-11-08 03:35:08",
+        "Rsrp": "-8",
+        "Rsrq": "-96",
+        "Rssnr": "120",
+        "SignalStrength": "22",
+        "reason": "connected",
+        "failover": "false",
+        "extra": "internet",
+        "isAvailable": "true"
+    },
+    {
+        "data": "2023-11-08 03:46:00",
+        "Rsrp": "-8",
+        "Rsrq": "-96",
+        "Rssnr": "136",
+        "SignalStrength": "23",
+        "reason": "connected",
+        "failover": "false",
+        "extra": "internet",
+        "isAvailable": "true"
+    },
+    {
+        "data": "2023-11-08 03:56:53",
+        "Rsrp": "-8",
+        "Rsrq": "-96",
+        "Rssnr": "126",
+        "SignalStrength": "23",
+        "reason": "connected",
+        "failover": "false",
+        "extra": "internet",
+        "isAvailable": "true"
+    },
+    {
+        "data": "2023-11-08 04:07:45",
+        "Rsrp": "-8",
+        "Rsrq": "-96",
+        "Rssnr": "22",
+        "SignalStrength": "88",
+        "reason": "connected",
+        "failover": "false",
+        "extra": "internet",
+        "isAvailable": "true"
+    },
+    {
+        "data": "2023-11-08 04:18:37",
+        "Rsrp": "-8",
+        "Rsrq": "-96",
+        "Rssnr": "130",
+        "SignalStrength": "22",
+        "reason": "connected",
+        "failover": "false",
+        "extra": "internet",
+        "isAvailable": "true"
+    },
+    {
+        "data": "2023-11-08 04:29:30",
+        "Rsrp": "-8",
+        "Rsrq": "-95",
+        "Rssnr": "122",
+        "SignalStrength": "23",
+        "reason": "connected",
+        "failover": "false",
+        "extra": "internet",
+        "isAvailable": "true"
+    },
+    {
+        "data": "2023-11-08 04:40:22",
+        "Rsrp": "-7",
+        "Rsrq": "-96",
+        "Rssnr": "134",
+        "SignalStrength": "22",
+        "reason": "connected",
+        "failover": "false",
+        "extra": "internet",
+        "isAvailable": "true"
+    },
+    {
+        "data": "2023-11-08 04:51:15",
+        "Rsrp": "-8",
+        "Rsrq": "-95",
+        "Rssnr": "126",
+        "SignalStrength": "22",
+        "reason": "connected",
+        "failover": "false",
+        "extra": "internet",
+        "isAvailable": "true"
+    },
+    {
+        "data": "2023-11-08 05:02:07",
+        "Rsrp": "-8",
+        "Rsrq": "-96",
+        "Rssnr": "23",
+        "SignalStrength": "76",
+        "reason": "connected",
+        "failover": "false",
+        "extra": "internet",
+        "isAvailable": "true"
+    },
+    {
+        "data": "2023-11-08 05:12:59",
+        "Rsrp": "-8",
+        "Rsrq": "-96",
+        "Rssnr": "128",
+        "SignalStrength": "22",
+        "reason": "connected",
+        "failover": "false",
+        "extra": "internet",
+        "isAvailable": "true"
+    }
+]

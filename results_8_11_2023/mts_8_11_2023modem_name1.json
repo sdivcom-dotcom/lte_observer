@@ -1,0 +1,222 @@
+[
+    {
+        "data": "2023-11-08 01:46:25",
+        "Rsrp": "-12",
+        "Rsrq": "-78",
+        "Rssnr": "31",
+        "SignalStrength": "42",
+        "reason": "connected",
+        "failover": "false",
+        "extra": "internet.mts.ru",
+        "isAvailable": "true"
+    },
+    {
+        "data": "2023-11-08 01:57:17",
+        "Rsrp": "-12",
+        "Rsrq": "-79",
+        "Rssnr": "31",
+        "SignalStrength": "40",
+        "reason": "connected",
+        "failover": "false",
+        "extra": "internet.mts.ru",
+        "isAvailable": "true"
+    },
+    {
+        "data": "2023-11-08 02:08:10",
+        "Rsrp": "-12",
+        "Rsrq": "-79",
+        "Rssnr": "31",
+        "SignalStrength": "40",
+        "reason": "connected",
+        "failover": "false",
+        "extra": "internet.mts.ru",
+        "isAvailable": "true"
+    },
+    {
+        "data": "2023-11-08 02:19:02",
+        "Rsrp": "-12",
+        "Rsrq": "-79",
+        "Rssnr": "31",
+        "SignalStrength": "40",
+        "reason": "connected",
+        "failover": "false",
+        "extra": "internet.mts.ru",
+        "isAvailable": "true"
+    },
+    {
+        "data": "2023-11-08 02:29:54",
+        "Rsrp": "-10",
+        "Rsrq": "-80",
+        "Rssnr": "158",
+        "SignalStrength": "31",
+        "reason": "connected",
+        "failover": "false",
+        "extra": "internet.mts.ru",
+        "isAvailable": "true"
+    },
+    {
+        "data": "2023-11-08 02:40:47",
+        "Rsrp": "-10",
+        "Rsrq": "-80",
+        "Rssnr": "158",
+        "SignalStrength": "31",
+        "reason": "connected",
+        "failover": "false",
+        "extra": "internet.mts.ru",
+        "isAvailable": "true"
+    },
+    {
+        "data": "2023-11-08 02:51:39",
+        "Rsrp": "-103",
+        "Rsrq": "-6",
+        "Rssnr": "116",
+        "SignalStrength": "18",
+        "reason": "connected",
+        "failover": "false",
+        "extra": "internet.mts.ru",
+        "isAvailable": "true"
+    },
+    {
+        "data": "2023-11-08 03:02:31",
+        "Rsrp": "-11",
+        "Rsrq": "-83",
+        "Rssnr": "122",
+        "SignalStrength": "30",
+        "reason": "connected",
+        "failover": "false",
+        "extra": "internet.mts.ru",
+        "isAvailable": "true"
+    },
+    {
+        "data": "2023-11-08 03:13:24",
+        "Rsrp": "-11",
+        "Rsrq": "-83",
+        "Rssnr": "31",
+        "SignalStrength": "76",
+        "reason": "connected",
+        "failover": "false",
+        "extra": "internet.mts.ru",
+        "isAvailable": "true"
+    },
+    {
+        "data": "2023-11-08 03:24:16",
+        "Rsrp": "-13",
+        "Rsrq": "-84",
+        "Rssnr": "31",
+        "SignalStrength": "82",
+        "reason": "connected",
+        "failover": "false",
+        "extra": "internet.mts.ru",
+        "isAvailable": "true"
+    },
+    {
+        "data": "2023-11-08 03:35:09",
+        "Rsrp": "-11",
+        "Rsrq": "-80",
+        "Rssnr": "128",
+        "SignalStrength": "31",
+        "reason": "connected",
+        "failover": "false",
+        "extra": "internet.mts.ru",
+        "isAvailable": "true"
+    },
+    {
+        "data": "2023-11-08 03:46:01",
+        "Rsrp": "-13",
+        "Rsrq": "-80",
+        "Rssnr": "100",
+        "SignalStrength": "31",
+        "reason": "connected",
+        "failover": "false",
+        "extra": "internet.mts.ru",
+        "isAvailable": "true"
+    },
+    {
+        "data": "2023-11-08 03:56:54",
+        "Rsrp": "-12",
+        "Rsrq": "-83",
+        "Rssnr": "104",
+        "SignalStrength": "31",
+        "reason": "connected",
+        "failover": "false",
+        "extra": "internet.mts.ru",
+        "isAvailable": "true"
+    },
+    {
+        "data": "2023-11-08 04:07:46",
+        "Rsrp": "-11",
+        "Rsrq": "-82",
+        "Rssnr": "144",
+        "SignalStrength": "31",
+        "reason": "connected",
+        "failover": "false",
+        "extra": "internet.mts.ru",
+        "isAvailable": "true"
+    },
+    {
+        "data": "2023-11-08 04:18:38",
+        "Rsrp": "-11",
+        "Rsrq": "-83",
+        "Rssnr": "136",
+        "SignalStrength": "30",
+        "reason": "connected",
+        "failover": "false",
+        "extra": "internet.mts.ru",
+        "isAvailable": "true"
+    },
+    {
+        "data": "2023-11-08 04:29:30",
+        "Rsrp": "-13",
+        "Rsrq": "-82",
+        "Rssnr": "138",
+        "SignalStrength": "31",
+        "reason": "connected",
+        "failover": "false",
+        "extra": "internet.mts.ru",
+        "isAvailable": "true"
+    },
+    {
+        "data": "2023-11-08 04:40:23",
+        "Rsrp": "-11",
+        "Rsrq": "-82",
+        "Rssnr": "142",
+        "SignalStrength": "30",
+        "reason": "connected",
+        "failover": "false",
+        "extra": "internet.mts.ru",
+        "isAvailable": "true"
+    },
+    {
+        "data": "2023-11-08 04:51:15",
+        "Rsrp": "-11",
+        "Rsrq": "-83",
+        "Rssnr": "126",
+        "SignalStrength": "30",
+        "reason": "connected",
+        "failover": "false",
+        "extra": "internet.mts.ru",
+        "isAvailable": "true"
+    },
+    {
+        "data": "2023-11-08 05:02:08",
+        "Rsrp": "-10",
+        "Rsrq": "-82",
+        "Rssnr": "134",
+        "SignalStrength": "31",
+        "reason": "connected",
+        "failover": "false",
+        "extra": "internet.mts.ru",
+        "isAvailable": "true"
+    },
+    {
+        "data": "2023-11-08 05:13:00",
+        "Rsrp": "-11",
+        "Rsrq": "-84",
+        "Rssnr": "144",
+        "SignalStrength": "30",
+        "reason": "connected",
+        "failover": "false",
+        "extra": "internet.mts.ru",
+        "isAvailable": "true"
+    }
+]
