@@ -75,7 +75,7 @@ def reboot_modem(device):
 def main(minute_cycle, sleep_time):
     print("Start Cycle")
     i = 0
-    r = 50
+    r = minute_cycle
     while i < r:
         print("Считываем показания")
         dev_count = find_count_devices()
@@ -106,4 +106,4 @@ def main(minute_cycle, sleep_time):
         i = i + 1
         print("Cycle =",i)
 
-main(1, 300)
+main(50, 120)
