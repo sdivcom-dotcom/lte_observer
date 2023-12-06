@@ -43,8 +43,6 @@ def start_programm(name_file):
         pass
     return response
 
-#val = os.system("python3 test.py")
-#print(val)
 
 def prover_files():
     command = "ls | grep json | wc -l"
@@ -70,21 +68,23 @@ def cp_rm_results(day_str):
     os.system(command_cp)
     command_rm = "rm *.json && rm *.png"
     os.system(command_rm)
-
-while True:
-    time_mass = what_time_day()
-    if time_mass[0] == start_hour and time_mass[1] == start_minute:
-        print("Запуск программы для сборки результатов. Время старта=",time_mass)
-        time.sleep(10)
-        start_programm("cycle.py")
-        val = prover_files()
-        if val == 1:
-            day_str = what_day_str()
-            start_programm("plot.py")
-            print("Запуск генерации графиков")
-            new_dir(day_str)
-            cp_rm_results(day_str)
+try:
+    while True:
+        time_mass = what_time_day()
+        if time_mass[0] == start_hour and time_mass[1] == start_minute:
+            print("Запуск программы для сборки результатов. Время старта=",time_mass)
+            time.sleep(10)
+            start_programm("cycle.py")
+            val = prover_files()
+            if val == 1:
+                day_str = what_day_str()
+                start_programm("plot.py")
+                print("Запуск генерации графиков")
+                new_dir(day_str)
+                cp_rm_results(day_str)
+            else:
+                print("Не были созданы все файлы")
         else:
-            print("Не были созданы все файлы")
-    else:
-        time.sleep(60)
+            time.sleep(60)
+except KeyboardInterrupt:
+    print("Выход из цикла по нажатию Ctrl+C")
