@@ -4,7 +4,7 @@ import time
 from datetime import datetime
 
 start_hour = 0
-start_minute = 1
+start_minute = 48
 
 def what_day_str():
     now = datetime.now()
