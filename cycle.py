@@ -106,4 +106,4 @@ def main(minute_cycle, sleep_time):
         i = i + 1
         print("Cycle =",i)
 
-main(2, 120)
+main(290, 120)
