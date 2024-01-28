@@ -64,7 +64,7 @@ def process_data(filename):
     df['sum_of_first_values'] = 0
     
     i = 0
-    r = min(60, len(df))  # Убедимся, что r не больше количества строк в DataFrame
+    r = min(300, len(df))  # Убедимся, что r не больше количества строк в DataFrame
     while i < r:
         # Выводим первые значения каждой переменной
         first_value_rsrp = df['Rsrp'].values[i]
@@ -137,6 +137,8 @@ def obrab(filename):
     corrector(filename)
     data = load_data_from_json(filename)
     plot_data(data, prefix)
+    response = prefix + "_" + filename
+    return response
     
 
 def mv_file(filename_mass):
@@ -161,5 +163,6 @@ def main():
     filename_mass = [filename1,filename2,filename3,filename4]
     results_plot(filename_mass)
     mv_file(filename_mass)
+    print(filename_mass)
 
 main()

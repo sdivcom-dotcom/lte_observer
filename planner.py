@@ -3,8 +3,8 @@ import subprocess
 import time
 from datetime import datetime
 
-start_hour = 0
-start_minute = 48
+start_hour = 3
+start_minute = 11
 
 def what_day_str():
     now = datetime.now()
@@ -71,6 +71,7 @@ def cp_rm_results(day_str):
 try:
     while True:
         time_mass = what_time_day()
+        print(time_mass)
         if time_mass[0] == start_hour and time_mass[1] == start_minute:
             print("Запуск программы для сборки результатов. Время старта=",time_mass)
             time.sleep(10)

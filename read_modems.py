@@ -120,4 +120,3 @@ def read_info_lte(device):
     read_lte_devce_params_mass = [param1,param2, param3, param4]
     
     return read_lte_devce_params_mass
-
