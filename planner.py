@@ -86,6 +86,6 @@ try:
             else:
                 print("Не были созданы все файлы")
         else:
-            time.sleep(10)
+            time.sleep(20)
 except KeyboardInterrupt:
     print("Выход из цикла по нажатию Ctrl+C")
