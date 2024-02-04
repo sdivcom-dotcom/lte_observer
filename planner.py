@@ -3,8 +3,8 @@ import subprocess
 import time
 from datetime import datetime
 
-start_hour = 3
-start_minute = 11
+start_hour = 0
+start_minute = 1
 
 def what_day_str():
     now = datetime.now()
