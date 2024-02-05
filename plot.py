@@ -72,7 +72,7 @@ def process_data(filename):
         first_value_rssnr = df['Rssnr'].values[i]
         first_value_signal_strength = df['SignalStrength'].values[i]
         #sum_of_first_values = (first_value_rsrp + first_value_rsrq + first_value_rssnr + first_value_signal_strength) / 4
-        sum_of_first_values = (first_value_rsrp + first_value_signal_strength) / 2
+        sum_of_first_values = first_value_rsrp
         df.loc[i, 'sum_of_first_values'] = sum_of_first_values
         i = i + 1
     
