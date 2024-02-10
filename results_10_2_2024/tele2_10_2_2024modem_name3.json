@@ -1,0 +1,79 @@
+[
+    {
+        "data": "2024-02-10 00:09:21",
+        "Rsrp": "-20",
+        "Rsrq": "-86",
+        "Rssnr": "-99",
+        "SignalStrength": "23",
+        "reason": "connected",
+        "failover": "false",
+        "extra": "internet.tele2.ru",
+        "isAvailable": "true"
+    },
+    {
+        "data": "2024-02-10 00:14:12",
+        "Rsrp": "-10",
+        "Rsrq": "-94",
+        "Rssnr": "21",
+        "SignalStrength": "48",
+        "reason": "connected",
+        "failover": "false",
+        "extra": "internet.tele2.ru",
+        "isAvailable": "true"
+    },
+    {
+        "data": "2024-02-10 00:19:03",
+        "Rsrp": "-13",
+        "Rsrq": "-94",
+        "Rssnr": "23",
+        "SignalStrength": "52",
+        "reason": "connected",
+        "failover": "false",
+        "extra": "internet.tele2.ru",
+        "isAvailable": "true"
+    },
+    {
+        "data": "2024-02-10 00:23:54",
+        "Rsrp": "-14",
+        "Rsrq": "-94",
+        "Rssnr": "2",
+        "SignalStrength": "23",
+        "reason": "connected",
+        "failover": "false",
+        "extra": "internet.tele2.ru",
+        "isAvailable": "true"
+    },
+    {
+        "data": "2024-02-10 00:28:46",
+        "Rsrp": "-12",
+        "Rsrq": "-95",
+        "Rssnr": "22",
+        "SignalStrength": "72",
+        "reason": "connected",
+        "failover": "false",
+        "extra": "internet.tele2.ru",
+        "isAvailable": "true"
+    },
+    {
+        "data": "2024-02-10 00:33:37",
+        "Rsrp": "-17",
+        "Rsrq": "-52",
+        "Rssnr": "-99",
+        "SignalStrength": "23",
+        "reason": "connected",
+        "failover": "false",
+        "extra": "internet.tele2.ru",
+        "isAvailable": "true"
+    },
+    {
+        "data": "2024-02-10 00:38:28",
+        "Rsrp": "-13",
+        "Rsrq": "-16",
+        "Rssnr": "-95",
+        "SignalStrength": "23",
+        "reason": "connected",
+        "failover": "false",
+        "extra": "internet.tele2.ru",
+        "isAvailable": "true"
+    }
+]

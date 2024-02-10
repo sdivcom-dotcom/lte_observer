@@ -1,0 +1,79 @@
+[
+    {
+        "data": "2024-02-10 00:09:20",
+        "Rsrp": "-13",
+        "Rsrq": "-78",
+        "Rssnr": "31",
+        "SignalStrength": "4",
+        "reason": "connected",
+        "failover": "false",
+        "extra": "internet.mts.ru",
+        "isAvailable": "true"
+    },
+    {
+        "data": "2024-02-10 00:14:11",
+        "Rsrp": "-15",
+        "Rsrq": "-79",
+        "Rssnr": "-86",
+        "SignalStrength": "31",
+        "reason": "connected",
+        "failover": "false",
+        "extra": "internet.mts.ru",
+        "isAvailable": "true"
+    },
+    {
+        "data": "2024-02-10 00:19:03",
+        "Rsrp": "-15",
+        "Rsrq": "-80",
+        "Rssnr": "14",
+        "SignalStrength": "31",
+        "reason": "connected",
+        "failover": "false",
+        "extra": "internet.mts.ru",
+        "isAvailable": "true"
+    },
+    {
+        "data": "2024-02-10 00:23:54",
+        "Rsrp": "-11",
+        "Rsrq": "-80",
+        "Rssnr": "31",
+        "SignalStrength": "32",
+        "reason": "connected",
+        "failover": "false",
+        "extra": "internet.mts.ru",
+        "isAvailable": "true"
+    },
+    {
+        "data": "2024-02-10 00:28:45",
+        "Rsrp": "-14",
+        "Rsrq": "-81",
+        "Rssnr": "31",
+        "SignalStrength": "56",
+        "reason": "connected",
+        "failover": "false",
+        "extra": "internet.mts.ru",
+        "isAvailable": "true"
+    },
+    {
+        "data": "2024-02-10 00:33:36",
+        "Rsrp": "-14",
+        "Rsrq": "-82",
+        "Rssnr": "31",
+        "SignalStrength": "46",
+        "reason": "connected",
+        "failover": "false",
+        "extra": "internet.mts.ru",
+        "isAvailable": "true"
+    },
+    {
+        "data": "2024-02-10 00:38:27",
+        "Rsrp": "-12",
+        "Rsrq": "-82",
+        "Rssnr": "18",
+        "SignalStrength": "31",
+        "reason": "connected",
+        "failover": "false",
+        "extra": "internet.mts.ru",
+        "isAvailable": "true"
+    }
+]
