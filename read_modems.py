@@ -54,15 +54,6 @@ def radio_switch(device, state):
         pass
 
 
-def modem_switch(device, state):
-    command_reboot = " shell reboot"
-    if state == "reboot":
-        command = command_adb + device + command_reboot
-        os.system(command)
-    else:
-        pass
-
-
 def find_connected_device(device):
     command_connect = " shell dumpsys connectivity | grep UNKNOWN/IDLE, | wc -l"
     command = command_adb + device + command_connect
@@ -120,3 +111,24 @@ def read_info_lte(device):
     read_lte_devce_params_mass = [param1,param2, param3, param4]
     
     return read_lte_devce_params_mass
+
+
+def main_read_modems():
+    device_mass = find_devices()
+    print("find_devices", device_mass)
+    val = find_connected_device(device_mass[0])
+    val1 = read_info_connect(device_mass[0])
+    val2 = read_info_lte(device_mass[0])
+    print("find_connected_device", val, val1, val2)
+    val = find_connected_device(device_mass[1])
+    val1 = read_info_connect(device_mass[1])
+    val2 = read_info_lte(device_mass[1])
+    print("find_connected_device", val, val1, val2)
+    val = find_connected_device(device_mass[2])
+    val1 = read_info_connect(device_mass[2])
+    val2 = read_info_lte(device_mass[2])
+    print("find_connected_device", val, val1, val2)
+    val = find_connected_device(device_mass[3])
+    val1 = read_info_connect(device_mass[3])
+    val2 = read_info_lte(device_mass[3])
+    print("find_connected_device", val, val1, val2)

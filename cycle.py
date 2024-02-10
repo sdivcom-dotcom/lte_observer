@@ -2,7 +2,7 @@ import time
 import json
 from datetime import datetime
 from diag_modems import diag_devices
-from read_modems import find_devices, find_count_devices, read_info_connect, find_connected_device, read_info_lte, radio_switch
+from read_modems import find_devices, find_count_devices, read_info_connect, find_connected_device, read_info_lte, radio_switch, main_read_modems
 
 
 def what_day():
@@ -44,7 +44,25 @@ def add_data_to_json(filename, Rsrp, Rsrq, Rssnr, SignalStrength, reason, failov
         json.dump(existing_data, file, indent=4)    
 
 
-def sum_command(filename, device):
+def finds_connected_device(device_mass):
+    ii = 0
+    rr = 4
+    verd = 0
+    response = 0
+    while ii < rr:
+        val = find_connected_device(device_mass[ii])
+        if val == 0:
+            verd = verd + 1
+        else:
+            break
+        ii = ii + 1
+    if verd == 4:
+        response = 1
+    return response
+
+
+
+def read_data_modems(filename, device):
     find = find_connected_device(device)
     if find == 0:
         connect_dev = read_info_connect(device)
@@ -52,13 +70,13 @@ def sum_command(filename, device):
         failover = connect_dev[1]
         extra = connect_dev[2]
         isAvailable = connect_dev[3]
-        #print(connect_dev)
+        print(connect_dev)
         dev_lte = read_info_lte(device)
         Rsrp = dev_lte[0]
         Rsrq = dev_lte[1]
         Rssnr = dev_lte[2]
         SignalStrength = dev_lte[3]
-        #print(dev_lte)
+        print(dev_lte)
         add_data_to_json(filename, Rsrp, Rsrq, Rssnr, SignalStrength, reason, failover, extra, isAvailable, date=None)
     else:
         pass
@@ -72,36 +90,52 @@ def reboot_modem(device):
     time.sleep(1)
 
 
+def reboots_modems(device_mass):
+    ii = 0
+    rr = 4
+    while ii < rr:
+            reboot_modem(device_mass[ii])
+            ii = ii + 1
+    
+
+def reads_datas(device_mass):
+    ii = 0
+    rr = 4
+    while ii < rr:
+        ii = str(ii)
+        filename = "modem_name" + ii
+        ii = int(ii)
+        read_data_modems(filename, device_mass[ii])
+        ii = ii + 1
+
+
 def main(minute_cycle, sleep_time):
     print("Start Cycle")
     i = 0
-    r = minute_cycle
-    while i < r:
+    while i < minute_cycle:
         print("Считываем показания")
         dev_count = find_count_devices()
         if dev_count == "4":
+            print("Все модемы подключены")
             device_mass = find_devices()
-            ii = 0
-            rr = 4
-            while ii < rr:
-                ii = str(ii)
-                filename = "modem_name" + ii
-                ii = int(ii)
-                sum_command(filename, device_mass[ii])
-                ii = ii + 1
+            finds = finds_connected_device(device_mass)
+            if finds == 1:
+                print("Все модемы подключены к сети")
+                reads_datas(device_mass)
+            else:
+                print("Недостаточно модемов подключены к сети")
         else:
-            print("Недостаточно модемов подключено к сети")
+            print("Недостаточно модемов подключены к компьютеру")
             print("Запускаю диагностику")
+            main_read_modems()
             diag_devices()
+
+            break
+            
         print("Пауза")
         time.sleep(sleep_time)
-        ii = 0
-        rr = 4
         print("Перезагружаем модемы")
-        while ii < rr:
-            device_mass = find_devices()
-            reboot_modem(device_mass[ii])
-            ii = ii + 1
+        reboots_modems(device_mass)
         time.sleep(sleep_time)
         i = i + 1
         print("Cycle =",i)
