@@ -20,7 +20,7 @@ def reboots_modems(device_mass):
 
 def main(sleep_time):
     print("Start Cycle")
-    time.sleep(sleep_time)
+    #time.sleep(sleep_time)
     print("Перезагружаем модемы")
     device_mass = find_devices()
     reboots_modems(device_mass)
