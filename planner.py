@@ -1,10 +1,27 @@
 import os
-import subprocess
 import time
+import argparse
+import subprocess
 from datetime import datetime
 
-start_hour = 0
-start_minute = 1
+
+parser = argparse.ArgumentParser(description="")
+
+parser.add_argument('-start_hour', '--start_hour',
+                    dest='start_hour',
+                    help='start_hour',
+                    default=0,
+                    type=int)
+
+parser.add_argument('-start_minute', '--start_minute',
+                    dest='start_minute',
+                    help='start_minute',
+                    default=1,
+                    type=int)
+
+args = parser.parse_args()
+start_hour = args.start_hour
+start_minute = args.start_minute
 
 def what_day_str():
     now = datetime.now()
