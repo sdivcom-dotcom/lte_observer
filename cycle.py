@@ -1,9 +1,27 @@
+import argparse
 import time
 import json
 from datetime import datetime
 from diag_modems import diag_devices
 from read_modems import find_devices, find_count_devices, read_info_connect, find_connected_device, read_info_lte, radio_switch, main_read_modems
 
+parser = argparse.ArgumentParser(description="")
+
+parser.add_argument('-minute_cycle', '--minute_cycle',
+                    dest='minute_cycle',
+                    help='minute_cycle',
+                    default=250,
+                    type=int)
+
+parser.add_argument('-sleep_time', '--sleep_time',
+                    dest='sleep_time',
+                    help='sleep_time',
+                    default=120,
+                    type=int)
+
+args = parser.parse_args()
+minute_cycle = args.minute_cycle
+sleep_time = args.sleep_time
 
 def what_day():
     now = datetime.now()
@@ -140,4 +158,5 @@ def main(minute_cycle, sleep_time):
         i = i + 1
         print("Cycle =",i)
 
-main(290, 120)
+
+main(minute_cycle, sleep_time)
