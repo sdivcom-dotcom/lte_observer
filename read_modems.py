@@ -96,7 +96,6 @@ def read_info_lte(device):
     read_lte_devce = subprocess.check_output(command, stderr=subprocess.STDOUT, shell=True)
     read_lte_devce = delete_simbol(read_lte_devce)
     read_lte_devce = read_lte_devce.replace("LteCqi=2147483647,CdmaDbm=-120,CdmaEcio=-160,GsmSignalStrength=99,isGsm=true,TdScdma=2147483647,EvdoDbm=-120,EvdoSnr=-1,EvdoEcio=-1,GsmBitErrorRate=0,", "")
-    #read_lte_devce = read_lte_devce.replace("2147483647", "")
     read_lte_devce = read_lte_devce.replace("CdmaDbm=-120", "")
     read_lte_devce = read_lte_devce.replace("CdmaEcio=-160", "")
     read_lte_devce = read_lte_devce.replace("EvdoDbm=-120", "")
@@ -107,7 +106,6 @@ def read_info_lte(device):
     read_lte_devce = read_lte_devce.replace("LteCqi=0", "")
     read_lte_devce = read_lte_devce.replace("TdScdma=2147483647", "")
     read_lte_devce = read_lte_devce.replace("isGsm=true", "")
-    #read_lte_devce = read_lte_devce.replace("TdScdma=", "")
     read_lte_devce = read_lte_devce.replace("Bundle[{", "")
     read_lte_devce = read_lte_devce.replace("}]", "")
     read_lte_devce = read_lte_devce.replace("\r\n", "")
@@ -115,6 +113,7 @@ def read_info_lte(device):
     read_lte_devce = read_lte_devce.replace("LteRsrq=", "")
     read_lte_devce = read_lte_devce.replace("LteRssnr=", "")
     read_lte_devce = read_lte_devce.replace("LteSignalStrength=", "")
+    read_lte_devce = read_lte_devce.replace("2147483647", "")
     read_lte_devce = read_lte_devce.replace("\r", "")
     lines = read_lte_devce.split(',')
     lines = [line for line in lines if line]
