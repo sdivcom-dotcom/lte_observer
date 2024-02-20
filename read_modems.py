@@ -107,6 +107,7 @@ def read_info_lte(device):
     read_lte_devce = read_lte_devce.replace("LteCqi=0", "")
     read_lte_devce = read_lte_devce.replace("TdScdma=2147483647", "")
     read_lte_devce = read_lte_devce.replace("isGsm=true", "")
+    read_lte_devce = read_lte_devce.replace("TdScdma=", "")
     read_lte_devce = read_lte_devce.replace("Bundle[{", "")
     read_lte_devce = read_lte_devce.replace("}]", "")
     read_lte_devce = read_lte_devce.replace("\r\n", "")
