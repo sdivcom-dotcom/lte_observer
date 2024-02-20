@@ -114,7 +114,7 @@ def read_info_lte(device):
     read_lte_devce = read_lte_devce.replace("LteRsrq=", "")
     read_lte_devce = read_lte_devce.replace("LteRssnr=", "")
     read_lte_devce = read_lte_devce.replace("LteSignalStrength=", "")
-    read_lte_devce = read_lte_devce.replace("2147483647", "")
+    #read_lte_devce = read_lte_devce.replace("2147483647", "")
     read_lte_devce = read_lte_devce.replace("\r", "")
     lines = read_lte_devce.split(',')
     lines = [line for line in lines if line]
@@ -145,3 +145,6 @@ def main_read_modems():
     val1 = read_info_connect(device_mass[3])
     val2 = read_info_lte(device_mass[3])
     print("find_connected_device", val, val1, val2)
+
+
+

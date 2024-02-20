@@ -1,0 +1,10 @@
+LteRsrp=-75,LteRsrq=-12,LteRssnr=12,LteSignalStrength=31
+['-12', '-75', '12', '31']
+
+LteRsrp=-90,LteRsrq=-10,LteRssnr=100,LteSignalStrength=26
+['-10', '-90', '100', '26']
+
+LteRsrp=-91,LteRsrq=-11,LteRssnr=168,LteSignalStrength=26
+['-11', '-91', '168', '26']
+
+LteRsrp=2147483647,LteRsrq=2147483647,LteRssnr=0,LteSignalStrength=0
