@@ -95,6 +95,7 @@ def read_info_lte(device):
     command = command_adb + device + command_read_lte
     read_lte_devce = subprocess.check_output(command, stderr=subprocess.STDOUT, shell=True)
     read_lte_devce = delete_simbol(read_lte_devce)
+    print(read_lte_devce)
     read_lte_devce = read_lte_devce.replace("LteCqi=2147483647,CdmaDbm=-120,CdmaEcio=-160,GsmSignalStrength=99,isGsm=true,TdScdma=2147483647,EvdoDbm=-120,EvdoSnr=-1,EvdoEcio=-1,GsmBitErrorRate=0,", "")
     read_lte_devce = read_lte_devce.replace("CdmaDbm=-120", "")
     read_lte_devce = read_lte_devce.replace("CdmaEcio=-160", "")
