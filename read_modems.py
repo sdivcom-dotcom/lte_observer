@@ -96,22 +96,30 @@ def read_info_lte(device):
     read_lte_devce = subprocess.check_output(command, stderr=subprocess.STDOUT, shell=True)
     read_lte_devce = delete_simbol(read_lte_devce)
     read_lte_devce = read_lte_devce.replace("LteCqi=2147483647,CdmaDbm=-120,CdmaEcio=-160,GsmSignalStrength=99,isGsm=true,TdScdma=2147483647,EvdoDbm=-120,EvdoSnr=-1,EvdoEcio=-1,GsmBitErrorRate=0,", "")
-    # read_lte_devce = read_lte_devce.replace("Bundle[{", "")
-    # read_lte_devce = read_lte_devce.replace("}]", "")
-    # read_lte_devce = read_lte_devce.replace("\r\n", "")
-    # read_lte_devce = read_lte_devce.replace("LteRsrp=", "")
-    # read_lte_devce = read_lte_devce.replace("LteRsrq=", "")
-    # read_lte_devce = read_lte_devce.replace("LteRssnr=", "")
-    # read_lte_devce = read_lte_devce.replace("LteSignalStrength=", "")
-    # read_lte_devce = read_lte_devce.replace("\r", "")
+    read_lte_devce = read_lte_devce.replace("2147483647", "")
+    read_lte_devce = read_lte_devce.replace("CdmaDbm=-120", "")
+    read_lte_devce = read_lte_devce.replace("CdmaEcio=-160", "")
+    read_lte_devce = read_lte_devce.replace("EvdoDbm=-120", "")
+    read_lte_devce = read_lte_devce.replace("EvdoEcio=0", "")
+    read_lte_devce = read_lte_devce.replace("EvdoSnr=-1", "")
+    read_lte_devce = read_lte_devce.replace("GsmBitErrorRate=0", "")
+    read_lte_devce = read_lte_devce.replace("GsmSignalStrength=0", "")
+    read_lte_devce = read_lte_devce.replace("LteCqi=0", "")
+    read_lte_devce = read_lte_devce.replace("TdScdma=2147483647", "")
+    read_lte_devce = read_lte_devce.replace("isGsm=true", "")
+    read_lte_devce = read_lte_devce.replace("Bundle[{", "")
+    read_lte_devce = read_lte_devce.replace("}]", "")
+    read_lte_devce = read_lte_devce.replace("\r\n", "")
+    read_lte_devce = read_lte_devce.replace("LteRsrp=", "")
+    read_lte_devce = read_lte_devce.replace("LteRsrq=", "")
+    read_lte_devce = read_lte_devce.replace("LteRssnr=", "")
+    read_lte_devce = read_lte_devce.replace("LteSignalStrength=", "")
+    read_lte_devce = read_lte_devce.replace("\r", "")
     lines = read_lte_devce.split(',')
     lines = [line for line in lines if line]
     lines.sort()
-    print(lines)
-    #['0', '0', '2147483647', '2147483647', 'CdmaDbm=-120', 'CdmaEcio=-160', 'EvdoDbm=-120', 'EvdoEcio=0', 'EvdoSnr=-1', 'GsmBitErrorRate=0', 'GsmSignalStrength=0', 'LteCqi=0', 'TdScdma=2147483647', 'isGsm=true']
-    #param1, param2, param3, param4 = lines
-    #if 
-    read_lte_devce_params_mass = [0,0, 0, 0]
+    param1, param2, param3, param4 = lines 
+    read_lte_devce_params_mass = [param1, param2, param3, param4]
     
     return read_lte_devce_params_mass
 
