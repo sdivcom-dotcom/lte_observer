@@ -10,7 +10,7 @@ parser = argparse.ArgumentParser(description="")
 parser.add_argument('-minute_cycle', '--minute_cycle',
                     dest='minute_cycle',
                     help='minute_cycle',
-                    default=250,
+                    default=280,
                     type=int)
 
 parser.add_argument('-sleep_time', '--sleep_time',
