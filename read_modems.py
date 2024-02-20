@@ -106,13 +106,13 @@ def read_info_lte(device):
     read_lte_devce = read_lte_devce.replace("\r", "")
     lines = read_lte_devce.split(',')
     lines = [line for line in lines if line]
-    val = lines.sort()
-    print(val)
-    param1, param2, param3, param4 = lines
-    print(param1, param2, param3, param4)
-    read_lte_devce_params_mass = [param1,param2, param3, param4]
+    lines.sort()
+    print(lines)
+    #param1, param2, param3, param4 = lines
+    #if 
+    #read_lte_devce_params_mass = [param1,param2, param3, param4]
     
-    return read_lte_devce_params_mass
+    #return read_lte_devce_params_mass
 
 
 def main_read_modems():
