@@ -120,9 +120,9 @@ def read_info_lte(device):
     lines.sort()
     print(lines)
     # param1, param2, param3, param4 = lines 
-    # read_lte_devce_params_mass = [param1, param2, param3, param4]
+    read_lte_devce_params_mass = [0, 0, 0, 0]
     
-    # return read_lte_devce_params_mass
+    return read_lte_devce_params_mass
 
 
 def main_read_modems():
