@@ -106,7 +106,8 @@ def read_info_lte(device):
     read_lte_devce = read_lte_devce.replace("\r", "")
     lines = read_lte_devce.split(',')
     lines = [line for line in lines if line]
-    lines.sort() 
+    val = lines.sort()
+    print(val)
     param1, param2, param3, param4 = lines
     read_lte_devce_params_mass = [param1,param2, param3, param4]
     

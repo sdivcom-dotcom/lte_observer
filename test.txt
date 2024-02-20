@@ -23,3 +23,25 @@
 # -75 dBm to -85 dBm	Fair
 # -85 dBm to -95 dBm	Poor
 # <= -95 dBm	No signal
+
+
+['connected', 'false', 'internet.mts.ru', 'true']
+['-12', '-75', '12', '31']
+['connected', 'false', 'internet.beeline.ru', 'true']
+['-10', '-90', '100', '26']
+['connected', 'false', 'internet', 'true']
+['-11', '-91', '168', '26']
+['connected', 'false', 'internet.tele2.ru', 'true']
+Traceback (most recent call last):
+  File "/home/server_41/lte_observer/cycle.py", line 162, in <module>
+    main(minute_cycle, sleep_time)
+  File "/home/server_41/lte_observer/cycle.py", line 142, in main
+    reads_datas(device_mass)
+  File "/home/server_41/lte_observer/cycle.py", line 126, in reads_datas
+    read_data_modems(filename, device_mass[ii])
+  File "/home/server_41/lte_observer/cycle.py", line 92, in read_data_modems
+    dev_lte = read_info_lte(device)
+  File "/home/server_41/lte_observer/read_modems.py", line 110, in read_info_lte
+    param1, param2, param3, param4 = lines
+ValueError: too many values to unpack (expected 4)
+Повторный запуск
