@@ -1,7 +1,7 @@
 import os
 import subprocess
 from decor import delete_trash, delete_simbol
-
+import time
 
 command_adb = "adb -s "
 command_list_devices = "adb devices -l | grep usb"
@@ -41,6 +41,7 @@ def radio_switch(device, state):
     command_on = " shell radiooptions 1"
     command_off = " shell radiooptions 5"
     command_reboot = " shell radiooptions 0"
+    reboot = "shell reboot"
     if state == "on":
         command = command_adb + device + command_on
         os.system(command)
@@ -49,7 +50,10 @@ def radio_switch(device, state):
         os.system(command)
     elif state == "reboot":
         command = command_adb + device + command_reboot
+        command2 = command_adb + device + reboot
         os.system(command)
+        time.sleep(5)
+        os.system(command2)
     else:
         pass
 

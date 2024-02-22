@@ -1,0 +1,156 @@
+[
+    {
+        "data": "2024-02-22 00:01:14",
+        "Rsrp": "-15",
+        "Rsrq": "-97",
+        "Rssnr": "22",
+        "SignalStrength": "24",
+        "reason": "connected",
+        "failover": "false",
+        "extra": "internet.beeline.ru",
+        "isAvailable": "true"
+    },
+    {
+        "data": "2024-02-22 00:06:06",
+        "Rsrp": "-18",
+        "Rsrq": "-4",
+        "Rssnr": "-96",
+        "SignalStrength": "28",
+        "reason": "connected",
+        "failover": "false",
+        "extra": "internet.beeline.ru",
+        "isAvailable": "true"
+    },
+    {
+        "data": "2024-02-22 00:10:57",
+        "Rsrp": "-12",
+        "Rsrq": "-97",
+        "Rssnr": "20",
+        "SignalStrength": "23",
+        "reason": "connected",
+        "failover": "false",
+        "extra": "internet.beeline.ru",
+        "isAvailable": "true"
+    },
+    {
+        "data": "2024-02-22 00:15:49",
+        "Rsrp": "-13",
+        "Rsrq": "-24",
+        "Rssnr": "-96",
+        "SignalStrength": "25",
+        "reason": "connected",
+        "failover": "false",
+        "extra": "internet.beeline.ru",
+        "isAvailable": "true"
+    },
+    {
+        "data": "2024-02-22 00:20:40",
+        "Rsrp": "-11",
+        "Rsrq": "-96",
+        "Rssnr": "23",
+        "SignalStrength": "44",
+        "reason": "connected",
+        "failover": "false",
+        "extra": "internet.beeline.ru",
+        "isAvailable": "true"
+    },
+    {
+        "data": "2024-02-22 00:25:32",
+        "Rsrp": "-10",
+        "Rsrq": "-13",
+        "Rssnr": "-96",
+        "SignalStrength": "25",
+        "reason": "connected",
+        "failover": "false",
+        "extra": "internet.beeline.ru",
+        "isAvailable": "true"
+    },
+    {
+        "data": "2024-02-22 00:30:23",
+        "Rsrp": "-12",
+        "Rsrq": "-96",
+        "Rssnr": "23",
+        "SignalStrength": "30",
+        "reason": "connected",
+        "failover": "false",
+        "extra": "internet.beeline.ru",
+        "isAvailable": "true"
+    },
+    {
+        "data": "2024-02-22 00:35:15",
+        "Rsrp": "-11",
+        "Rsrq": "-97",
+        "Rssnr": "23",
+        "SignalStrength": "90",
+        "reason": "connected",
+        "failover": "false",
+        "extra": "internet.beeline.ru",
+        "isAvailable": "true"
+    },
+    {
+        "data": "2024-02-22 00:40:07",
+        "Rsrp": "-12",
+        "Rsrq": "-97",
+        "Rssnr": "24",
+        "SignalStrength": "90",
+        "reason": "connected",
+        "failover": "false",
+        "extra": "internet.beeline.ru",
+        "isAvailable": "true"
+    },
+    {
+        "data": "2024-02-22 00:44:59",
+        "Rsrp": "-12",
+        "Rsrq": "-96",
+        "Rssnr": "24",
+        "SignalStrength": "94",
+        "reason": "connected",
+        "failover": "false",
+        "extra": "internet.beeline.ru",
+        "isAvailable": "true"
+    },
+    {
+        "data": "2024-02-22 00:49:51",
+        "Rsrp": "-14",
+        "Rsrq": "-6",
+        "Rssnr": "-96",
+        "SignalStrength": "24",
+        "reason": "connected",
+        "failover": "false",
+        "extra": "internet.beeline.ru",
+        "isAvailable": "true"
+    },
+    {
+        "data": "2024-02-22 00:54:42",
+        "Rsrp": "-15",
+        "Rsrq": "-97",
+        "Rssnr": "25",
+        "SignalStrength": "36",
+        "reason": "connected",
+        "failover": "false",
+        "extra": "internet.beeline.ru",
+        "isAvailable": "true"
+    },
+    {
+        "data": "2024-02-22 00:59:34",
+        "Rsrp": "-11",
+        "Rsrq": "-96",
+        "Rssnr": "23",
+        "SignalStrength": "62",
+        "reason": "connected",
+        "failover": "false",
+        "extra": "internet.beeline.ru",
+        "isAvailable": "true"
+    },
+    {
+        "data": "2024-02-22 00:59:46",
+        "Rsrp": "-11",
+        "Rsrq": "-96",
+        "Rssnr": "23",
+        "SignalStrength": "62",
+        "reason": "connected",
+        "failover": "false",
+        "extra": "internet.beeline.ru",
+        "isAvailable": "true"
+    }
+]
