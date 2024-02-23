@@ -16,7 +16,7 @@ parser.add_argument('-minute_cycle', '--minute_cycle',
 parser.add_argument('-sleep_time', '--sleep_time',
                     dest='sleep_time',
                     help='sleep_time',
-                    default=60,
+                    default=120,
                     type=int)
 
 args = parser.parse_args()
@@ -94,7 +94,7 @@ def read_data_modems(filename, device):
         Rsrq = dev_lte[1]
         Rssnr = dev_lte[2]
         SignalStrength = dev_lte[3]
-        #print(dev_lte)
+        print(dev_lte)
         add_data_to_json(filename, Rsrp, Rsrq, Rssnr, SignalStrength, reason, failover, extra, isAvailable, date=None)
     else:
         pass
