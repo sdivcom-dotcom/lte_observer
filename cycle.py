@@ -63,6 +63,7 @@ def add_data_to_json(filename, Rsrp, Rsrq, Rssnr, SignalStrength, reason, failov
 
 
 def finds_connected_device(device_mass):
+    #print(device_mass)
     ii = 0
     rr = 4
     verd = 0
@@ -94,7 +95,7 @@ def read_data_modems(filename, device):
         Rsrq = dev_lte[1]
         Rssnr = dev_lte[2]
         SignalStrength = dev_lte[3]
-        print(dev_lte)
+        #print(dev_lte)
         add_data_to_json(filename, Rsrp, Rsrq, Rssnr, SignalStrength, reason, failover, extra, isAvailable, date=None)
     else:
         pass
@@ -136,7 +137,9 @@ def main(minute_cycle, sleep_time):
         if dev_count == "4":
             print("Все модемы подключены")
             device_mass = find_devices()
+            #print(device_mass)
             finds = finds_connected_device(device_mass)
+            #print(finds)
             if finds == 1:
                 print("Все модемы подключены к сети")
                 reads_datas(device_mass)

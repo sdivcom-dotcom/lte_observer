@@ -49,9 +49,9 @@ def radio_switch(device, state):
         command = command_adb + device + command_off
         os.system(command)
     elif state == "reboot":
-        command = command_adb + device + command_reboot
-        #command2 = command_adb + device + reboot
-        os.system(command)
+        #command = command_adb + device + command_reboot
+        command2 = command_adb + device + reboot
+        os.system(command2)
         #time.sleep(5)
         #os.system(command2)
     else:
