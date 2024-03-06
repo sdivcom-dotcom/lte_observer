@@ -1,0 +1,112 @@
+[
+    {
+        "data": "2024-03-06 00:58:45",
+        "Rsrp": "-10",
+        "Rsrq": "-90",
+        "Rssnr": "23",
+        "SignalStrength": "86",
+        "reason": "connected",
+        "failover": "false",
+        "extra": "internet.tele2.ru",
+        "isAvailable": "true"
+    },
+    {
+        "data": "2024-03-06 00:59:38",
+        "Rsrp": "-10",
+        "Rsrq": "-90",
+        "Rssnr": "23",
+        "SignalStrength": "86",
+        "reason": "connected",
+        "failover": "false",
+        "extra": "internet.tele2.ru",
+        "isAvailable": "true"
+    },
+    {
+        "data": "2024-03-06 01:03:37",
+        "Rsrp": "-10",
+        "Rsrq": "-89",
+        "Rssnr": "24",
+        "SignalStrength": "38",
+        "reason": "connected",
+        "failover": "false",
+        "extra": "internet.tele2.ru",
+        "isAvailable": "true"
+    },
+    {
+        "data": "2024-03-06 01:04:30",
+        "Rsrp": "-10",
+        "Rsrq": "-89",
+        "Rssnr": "24",
+        "SignalStrength": "38",
+        "reason": "connected",
+        "failover": "false",
+        "extra": "internet.tele2.ru",
+        "isAvailable": "true"
+    },
+    {
+        "data": "2024-03-06 01:08:29",
+        "Rsrp": "-10",
+        "Rsrq": "-91",
+        "Rssnr": "23",
+        "SignalStrength": "62",
+        "reason": "connected",
+        "failover": "false",
+        "extra": "internet.tele2.ru",
+        "isAvailable": "true"
+    },
+    {
+        "data": "2024-03-06 01:09:21",
+        "Rsrp": "-10",
+        "Rsrq": "-91",
+        "Rssnr": "23",
+        "SignalStrength": "62",
+        "reason": "connected",
+        "failover": "false",
+        "extra": "internet.tele2.ru",
+        "isAvailable": "true"
+    },
+    {
+        "data": "2024-03-06 01:13:21",
+        "Rsrp": "-10",
+        "Rsrq": "-90",
+        "Rssnr": "23",
+        "SignalStrength": "60",
+        "reason": "connected",
+        "failover": "false",
+        "extra": "internet.tele2.ru",
+        "isAvailable": "true"
+    },
+    {
+        "data": "2024-03-06 01:14:12",
+        "Rsrp": "-10",
+        "Rsrq": "-90",
+        "Rssnr": "23",
+        "SignalStrength": "60",
+        "reason": "connected",
+        "failover": "false",
+        "extra": "internet.tele2.ru",
+        "isAvailable": "true"
+    },
+    {
+        "data": "2024-03-06 01:18:13",
+        "Rsrp": "-9",
+        "Rsrq": "-90",
+        "Rssnr": "128",
+        "SignalStrength": "23",
+        "reason": "connected",
+        "failover": "false",
+        "extra": "internet.tele2.ru",
+        "isAvailable": "true"
+    },
+    {
+        "data": "2024-03-06 01:19:04",
+        "Rsrp": "-9",
+        "Rsrq": "-90",
+        "Rssnr": "128",
+        "SignalStrength": "23",
+        "reason": "connected",
+        "failover": "false",
+        "extra": "internet.tele2.ru",
+        "isAvailable": "true"
+    }
+]

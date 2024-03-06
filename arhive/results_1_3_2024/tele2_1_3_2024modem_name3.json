@@ -1,0 +1,156 @@
+[
+    {
+        "data": "2024-03-01 00:49:54",
+        "Rsrp": "-12",
+        "Rsrq": "-85",
+        "Rssnr": "27",
+        "SignalStrength": "50",
+        "reason": "connected",
+        "failover": "false",
+        "extra": "internet.tele2.ru",
+        "isAvailable": "true"
+    },
+    {
+        "data": "2024-03-01 00:54:45",
+        "Rsrp": "-12",
+        "Rsrq": "-86",
+        "Rssnr": "138",
+        "SignalStrength": "26",
+        "reason": "connected",
+        "failover": "false",
+        "extra": "internet.tele2.ru",
+        "isAvailable": "true"
+    },
+    {
+        "data": "2024-03-01 00:59:37",
+        "Rsrp": "-87",
+        "Rsrq": "-9",
+        "Rssnr": "108",
+        "SignalStrength": "25",
+        "reason": "connected",
+        "failover": "false",
+        "extra": "internet.tele2.ru",
+        "isAvailable": "true"
+    },
+    {
+        "data": "2024-03-01 01:04:28",
+        "Rsrp": "-8",
+        "Rsrq": "-87",
+        "Rssnr": "24",
+        "SignalStrength": "88",
+        "reason": "connected",
+        "failover": "false",
+        "extra": "internet.tele2.ru",
+        "isAvailable": "true"
+    },
+    {
+        "data": "2024-03-01 01:09:20",
+        "Rsrp": "-13",
+        "Rsrq": "-86",
+        "Rssnr": "160",
+        "SignalStrength": "26",
+        "reason": "connected",
+        "failover": "false",
+        "extra": "internet.tele2.ru",
+        "isAvailable": "true"
+    },
+    {
+        "data": "2024-03-01 01:14:12",
+        "Rsrp": "-8",
+        "Rsrq": "-87",
+        "Rssnr": "24",
+        "SignalStrength": "72",
+        "reason": "connected",
+        "failover": "false",
+        "extra": "internet.tele2.ru",
+        "isAvailable": "true"
+    },
+    {
+        "data": "2024-03-01 01:19:03",
+        "Rsrp": "-8",
+        "Rsrq": "-87",
+        "Rssnr": "172",
+        "SignalStrength": "24",
+        "reason": "connected",
+        "failover": "false",
+        "extra": "internet.tele2.ru",
+        "isAvailable": "true"
+    },
+    {
+        "data": "2024-03-01 01:23:55",
+        "Rsrp": "-8",
+        "Rsrq": "-86",
+        "Rssnr": "160",
+        "SignalStrength": "24",
+        "reason": "connected",
+        "failover": "false",
+        "extra": "internet.tele2.ru",
+        "isAvailable": "true"
+    },
+    {
+        "data": "2024-03-01 01:28:47",
+        "Rsrp": "-8",
+        "Rsrq": "-87",
+        "Rssnr": "168",
+        "SignalStrength": "24",
+        "reason": "connected",
+        "failover": "false",
+        "extra": "internet.tele2.ru",
+        "isAvailable": "true"
+    },
+    {
+        "data": "2024-03-01 01:33:39",
+        "Rsrp": "-86",
+        "Rsrq": "-9",
+        "Rssnr": "102",
+        "SignalStrength": "24",
+        "reason": "connected",
+        "failover": "false",
+        "extra": "internet.tele2.ru",
+        "isAvailable": "true"
+    },
+    {
+        "data": "2024-03-01 01:38:31",
+        "Rsrp": "-8",
+        "Rsrq": "-86",
+        "Rssnr": "192",
+        "SignalStrength": "20",
+        "reason": "connected",
+        "failover": "false",
+        "extra": "internet.tele2.ru",
+        "isAvailable": "true"
+    },
+    {
+        "data": "2024-03-01 01:43:23",
+        "Rsrp": "-12",
+        "Rsrq": "-86",
+        "Rssnr": "27",
+        "SignalStrength": "70",
+        "reason": "connected",
+        "failover": "false",
+        "extra": "internet.tele2.ru",
+        "isAvailable": "true"
+    },
+    {
+        "data": "2024-03-01 01:48:14",
+        "Rsrp": "-87",
+        "Rsrq": "-9",
+        "Rssnr": "24",
+        "SignalStrength": "64",
+        "reason": "connected",
+        "failover": "false",
+        "extra": "internet.tele2.ru",
+        "isAvailable": "true"
+    },
+    {
+        "data": "2024-03-01 01:53:06",
+        "Rsrp": "-8",
+        "Rsrq": "-86",
+        "Rssnr": "216",
+        "SignalStrength": "27",
+        "reason": "connected",
+        "failover": "false",
+        "extra": "internet.tele2.ru",
+        "isAvailable": "true"
+    }
+]

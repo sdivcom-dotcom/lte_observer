@@ -1,0 +1,134 @@
+[
+    {
+        "data": "2024-03-06 00:58:44",
+        "Rsrp": "-8",
+        "Rsrq": "-93",
+        "Rssnr": "23",
+        "SignalStrength": "78",
+        "reason": "connected",
+        "failover": "false",
+        "extra": "internet.beeline.ru",
+        "isAvailable": "true"
+    },
+    {
+        "data": "2024-03-06 00:59:37",
+        "Rsrp": "-8",
+        "Rsrq": "-93",
+        "Rssnr": "23",
+        "SignalStrength": "78",
+        "reason": "connected",
+        "failover": "false",
+        "extra": "internet.beeline.ru",
+        "isAvailable": "true"
+    },
+    {
+        "data": "2024-03-06 01:03:36",
+        "Rsrp": "-12",
+        "Rsrq": "-91",
+        "Rssnr": "27",
+        "SignalStrength": "36",
+        "reason": "connected",
+        "failover": "false",
+        "extra": "internet.beeline.ru",
+        "isAvailable": "true"
+    },
+    {
+        "data": "2024-03-06 01:04:29",
+        "Rsrp": "-12",
+        "Rsrq": "-91",
+        "Rssnr": "27",
+        "SignalStrength": "36",
+        "reason": "connected",
+        "failover": "false",
+        "extra": "internet.beeline.ru",
+        "isAvailable": "true"
+    },
+    {
+        "data": "2024-03-06 01:08:28",
+        "Rsrp": "-8",
+        "Rsrq": "-94",
+        "Rssnr": "24",
+        "SignalStrength": "54",
+        "reason": "connected",
+        "failover": "false",
+        "extra": "internet.beeline.ru",
+        "isAvailable": "true"
+    },
+    {
+        "data": "2024-03-06 01:09:20",
+        "Rsrp": "-8",
+        "Rsrq": "-94",
+        "Rssnr": "24",
+        "SignalStrength": "54",
+        "reason": "connected",
+        "failover": "false",
+        "extra": "internet.beeline.ru",
+        "isAvailable": "true"
+    },
+    {
+        "data": "2024-03-06 01:13:20",
+        "Rsrp": "-9",
+        "Rsrq": "-95",
+        "Rssnr": "23",
+        "SignalStrength": "74",
+        "reason": "connected",
+        "failover": "false",
+        "extra": "internet.beeline.ru",
+        "isAvailable": "true"
+    },
+    {
+        "data": "2024-03-06 01:14:11",
+        "Rsrp": "-9",
+        "Rsrq": "-95",
+        "Rssnr": "23",
+        "SignalStrength": "74",
+        "reason": "connected",
+        "failover": "false",
+        "extra": "internet.beeline.ru",
+        "isAvailable": "true"
+    },
+    {
+        "data": "2024-03-06 01:18:12",
+        "Rsrp": "-8",
+        "Rsrq": "-94",
+        "Rssnr": "23",
+        "SignalStrength": "72",
+        "reason": "connected",
+        "failover": "false",
+        "extra": "internet.beeline.ru",
+        "isAvailable": "true"
+    },
+    {
+        "data": "2024-03-06 01:19:03",
+        "Rsrp": "-8",
+        "Rsrq": "-94",
+        "Rssnr": "23",
+        "SignalStrength": "72",
+        "reason": "connected",
+        "failover": "false",
+        "extra": "internet.beeline.ru",
+        "isAvailable": "true"
+    },
+    {
+        "data": "2024-03-06 01:23:04",
+        "Rsrp": "-14",
+        "Rsrq": "-94",
+        "Rssnr": "25",
+        "SignalStrength": "62",
+        "reason": "connected",
+        "failover": "false",
+        "extra": "internet.beeline.ru",
+        "isAvailable": "true"
+    },
+    {
+        "data": "2024-03-06 01:23:16",
+        "Rsrp": "-14",
+        "Rsrq": "-94",
+        "Rssnr": "25",
+        "SignalStrength": "62",
+        "reason": "connected",
+        "failover": "false",
+        "extra": "internet.beeline.ru",
+        "isAvailable": "true"
+    }
+]
